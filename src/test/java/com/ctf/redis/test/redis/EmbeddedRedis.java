@@ -1,4 +1,4 @@
-package com.ctf.redis.test.utils.redis;
+package com.ctf.redis.test.redis;
 
 
 import org.junit.jupiter.api.extension.ExtendWith;

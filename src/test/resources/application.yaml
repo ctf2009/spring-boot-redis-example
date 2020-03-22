@@ -2,4 +2,4 @@ server:
   port: 9000
 
 redis:
-  port: ${embedded.redis.value:default}
+  port: ${embedded.redis.port}

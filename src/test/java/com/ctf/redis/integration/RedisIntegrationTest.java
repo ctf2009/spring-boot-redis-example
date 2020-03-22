@@ -2,15 +2,15 @@ package com.ctf.redis.integration;
 
 import com.ctf.redis.model.repository.MessageRepository;
 import com.ctf.redis.service.RedisService;
-import com.ctf.redis.test.utils.redis.EmbeddedRedis;
+import com.ctf.redis.test.redis.EmbeddedRedis;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.Duration;
 
-import static com.ctf.redis.test.utils.model.TestDataUtils.*;
-import static com.ctf.redis.test.utils.redis.EmbeddedRedis.FlushStrategy;
+import static com.ctf.redis.test.model.TestDataUtils.*;
+import static com.ctf.redis.test.redis.EmbeddedRedis.FlushStrategy;
 import static java.time.temporal.ChronoUnit.SECONDS;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.awaitility.Awaitility.await;

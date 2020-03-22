@@ -1,4 +1,4 @@
-package com.ctf.redis.test.utils.redis;
+package com.ctf.redis.test.redis;
 
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.api.StatefulRedisConnection;
@@ -12,13 +12,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.SocketUtils;
 import redis.embedded.RedisServer;
 
-import static com.ctf.redis.test.utils.redis.EmbeddedRedis.FlushStrategy;
+import static com.ctf.redis.test.redis.EmbeddedRedis.FlushStrategy;
 
 public class EmbeddedRedisExtension implements BeforeAllCallback, AfterAllCallback, AfterEachCallback, BeforeEachCallback {
 
     private static final Logger LOG = LoggerFactory.getLogger(EmbeddedRedisExtension.class);
 
-    private static final String PROPERTY_NAME = "embedded.redis.value";
+    private static final String PROPERTY_NAME = "embedded.redis.port";
 
     private RedisServer redisServer;
     private StatefulRedisConnection<?, ?> redisConnection;

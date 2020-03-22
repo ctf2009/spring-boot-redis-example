@@ -1,4 +1,4 @@
-package com.ctf.redis.test.utils.model;
+package com.ctf.redis.test.model;
 
 import com.ctf.redis.model.Message;
 
